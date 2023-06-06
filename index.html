@@ -188,26 +188,48 @@
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="translate"
                 cn="2019年11月" en="November 2019"></span> - <span class="w3-tag w3-teal w3-round"><span class="translate"
                   cn="至今" en="Current"></span></span></h6>
-            <p><span class="translate" cn="我主要负责新能源车企业的供应链管控系统的开发, 它是一个基于雅典娜平台的SaaS应用, 应用代号VSS"
-                en="My main responsibility is the development of a SaaS application based on Athena platform, it focuses on supply chain management of new energy electric vehicles.The application code is VSS."></span>
-            </p>
-            <p><span class="translate" cn="我所在的团队采用敏捷开发模式, 在Scrum Master的带领下, 以2周为一个冲刺, 对产品进行迭代"
-                en="My team adopts an agile development model, led by Scrum Master, to iterate the product in a 2-week sprint."></span>
+            <p><span class="translate"
+                cn="我所在的团队采用敏捷开发模式, 在Scrum Master(SM)的带领下, 以2周为一个冲刺, 每个冲刺都会开冲刺计划会, 和PO确认需求和分配开发任务, 开发基于雅典娜平台的SaaS应用. 我主要负责后端开发, 有时也会编写前端代码. 我还负责初级开发同事的代码Review以及部分历史代码的优化和重构. 我们的团队鼓励在代码中使用工厂方法, 建造者, 策略模式等设计模式, 强调命名的重要性, 可以自解释的代码优于注释"
+                en="My developer team adopts an agile development model, led by a Scrum Master, we work in sprints of 2 weeks duration. Each sprint begins with a sprint planning meeting, where we confirm requirements with the Product Owner (PO) and allocate development tasks. We develop a SaaS application based on the Athena platform. I am mainly responsible for backend development and sometimes I also write front-end code. I also responsible for the code reviewing of junior developers, as well as the optimization and refactoring of some historical code. Our team encourages the use of design patterns such as factory methods, builders, and the strategy pattern in our code. We emphasize the importance of naming and believe that self-explanatory code is superior to comments."></span>
             </p>
             <p><span class="translate"
-                cn="项目使用的主要技术是Spring Boot搭建后端的微服务, 前端采用Angular和Ant Design, 数据库使用MySql,MangoDB和Neo4J"
-                en="The main technology used in the project is Spring Boot to build back-end microservices, the front-end uses Angular and Ant Design, and the database uses MySql, MangoDB and Neo4J."></span>
+                cn="后端方面, 我们使用Intellij Idea编写代码, 使用Maven来构建Java项目, 使用Git来做版本控制. 在代码质量控制方面, 我们选择Sonar Lint和Alibaba Coding Guidlines插件. 在进行性能优化时, 我们还会使用PinPoint来查看服务的调用链路和服务器的负载压力, 使用Druid Monitor来监控SQL语句的执行状况"
+                en="On the backend side, We use Intellij Idea for writing code, Maven for building Java projects, and Git for version control. For code quality control, we choose SonarLint and Alibaba Coding Guidelines plugins. When performing performance optimization, we also ues PinPoint to inspect service call chains and server load pressure. Additionally, we use Druid Monitor to check the execution status of SQL statements."></span>
             </p>
-            <p><span class="translate" cn="我们的客户包括有零件厂也有主机厂, 知名的主机厂有比亚迪, 长城汽车, 吉利汽车等"
-                en="Our customers include both parts and main engine factories, including well-known main like engine Great Wall Motor, Geely Auto, BYD Auto, etc."></span>
+            <p><span class="translate" cn="前端方面, 我们使用VSCode和ES Lint插件来编写代码, 使用NPM来构建Angular项目, 我们使用的UI库是蚂蚁金服的Ant Design"
+                en="On the frontend side, we use VSCode and the ES Lint plugin for code writing. We ues NPM for building Angular projects, and we choose Ant Design by Ant Financial as our UI library."></span>
             </p>
-            <p><span class="translate" cn="VSS 为客户提供了订单风险侦测, 生管出货, 库存协同, 发运签收及对账等功能"
-                en="VSS provides our clients abilities like Sales Order Risk Detection, Production Manager Shipping, Inventory Coordination, Delivery Signing and Reconcile, etc."></span>
+            <p><span class="translate" cn="下面我描述下最近的2个项目经历: "
+                en="Below, I will describe experience of two recent projects: "></span>
             </p>
-            <p><span class="translate" cn="我的另一个职责是负责初级开发同事的代码Review以及部分历史代码的优化和重构, 以及和PM确认需求和分配开发任务"
-                en="My other responsibility is the code reviewing of junior developers, as well as the optimization and refactoring of some historical code, as well as confirming requirements and assigning development tasks with the Product Manager."></span>
+            <h6 class="w3-text-teal"><i class="fa fa-asterisk fa-fw w3-margin-right"></i><span class="translate"
+                cn="供应天眼" en="VSS"></span></span>
+            </h6>
+            <p><span class="translate"
+                cn="供应天眼是一个关于新能源车企业的供应链管控系统, 应用代号VSS, 他是一个我从0到1开发的项目. VSS 为客户提供了订单风险侦测, 生管出货, 库存协同, 发运签收等功能. 我们的客户包括有零件厂也有主机厂, 知名的主机厂有比亚迪汽车, 长城汽车, 吉利汽车等"
+                en="VSS is a SaaS application based on Athena platform that I developed from scratch, it focuses on supply chain management of new energy electric vehicles. It provides our clients functionalities like Sales Order Risk Detection, Production Manager Shipping, Inventory Coordination, Delivery Signing, etc. Our customers include both parts and main engine factories, including well-known main like engine Great Wall Motor, Geely Auto, BYD Auto, etc."></span>
             </p>
-
+            <p><span class="translate"
+                cn="当我开发订单风险侦测功能时, 我发现获取发动机零部件的API回传数据量过大, 经常超时或者回参数据量超出HTTP响应体的最大值, 为了解决这个问题, 我使用了异步调用的方式, 分批获取零件, 把每个批次的回参结果写入临时表, 所有批次结束后, 再合并, 组装成BOM树之后再进行进一步分析"
+                en="When developing the Sales Order Risk Detection feature, I encountered an issue where the API for retrieving engine components returned a large amount of data, often causing timeouts or exceeding the maximum value of the HTTP response body. To address this problem, I implemented an asynchronous call approach to retrieve the parts in batches. I stored the response results of each batch in a temporary table. Once all the batches were completed, I merged and assembled them into a BOM (Bill of Materials) tree for further analysis."></span>
+            </p>
+            <p><span class="translate" cn="供应天眼项目现已顺利进行15个迭代的开发, 22家客户正在使用中, 其中包括知名的主机厂, 比如比亚迪汽车, 长城汽车, 吉利汽车等"
+                en="The VSS project has successfully undergone 15 iterations of development, with 22 clients currently using it. This includes renowned automobile manufacturers such as BYD Auto, Great Wall Auto, Geely Auto, and more."></span>
+            </p>
+            <h6 class="w3-text-teal"><i class="fa fa-asterisk fa-fw w3-margin-right"></i><span class="translate"
+                cn="带图采购" en="PWD"></span></span>
+            </h6>
+            <p><span class="translate"
+                cn="带图采购是一个工业零件图纸版本管控系统, 应用代号PWD, 它主要实现了在采购闭环中附加图纸以及图纸版号的控制功能. 在这个项目中, 我主要负责性能优化和代码的重构."
+                en="PWD is an industrial part drawing version control system. It primarily implements the control functionality of attaching drawings and version numbers within the production life cycle. In this project, my main responsibilities are performance optimization and code refactoring."></span>
+            </p>
+            <p><span class="translate"
+                cn="重构过程中我发现询价单信息查询的服务性能较差, 响应时间太长, 且有时会出现从连接池获取不到数据库连接的问题, 非常影响用户体验. 首先, 我查看PinPoint上的服务调用链路, 发现其内部调用的一个服务耗时很长, 然后用PinPoint上查询到的时间节点到Druid Monitor上搜索, 发现一条SQL语句执行时间特别长, 每次请求这个服务, 执行该SQL语句时, 都会占用一个数据库连接池的链接, 导致后续的请求获取不到链接, 在用explain语句分析后, 发现这条SQL扫描行数远超预期, 原因是WHERE条件中使用了substring函数导致该字段所在的索引失效, 提前处理好参数, 再进行查询, 速度明显提升且不再出现获取不到数据库链接异常"
+                en="During the refactoring process, I discovered that the performance of the inquiry order information retrieval service was poor, with excessively long response times. Additionally, there were occasional issues with not being able to retrieve database connections from the connection pool, greatly impacting the user experience. Firstly, I examined the service call chain on PinPoint and identified a service with a long processing time. Using the time stamps obtained from PinPoint, I searched on Druid Monitor and found a specific SQL statement that took an unusually long time to execute. Each request to this service would occupy a database connection from the pool, causing subsequent requests to fail in acquiring connections. After analyzing the SQL statement with the EXPLAIN statement, I discovered that the number of rows scanned by the SQL statement far exceeded expectations. The cause was the use of the SUBSTRING function in the WHERE condition, which deactivated the index on the corresponding field. By preprocessing the parameters and then performing the query, the speed significantly improved, and the issue of failing to obtain a database connection no longer occurred."></span>
+            </p>
+            <p><span class="translate" cn="带图采购项目经过重构和优化后, 产品响应速度明显提升, 客户对成果满意, 并决定对产品多续费一年"
+                en="After the refactoring and optimization of the PWD project, the product's response speed significantly improved. The customer was satisfied with the results and decided to renew the product for an additional year."></span>
+            </p>
             <hr>
           </div>
           <div class="w3-container">
@@ -216,8 +238,9 @@
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="translate"
                 cn="2018年7月" en="July 2018"></span> - <span class="translate" cn="2019年10月" en="October 2019"></span>
             </h6>
-            <p><span class="translate" cn="这是我的毕业实习公司, 我主要负责武汉市第一医院布草和手术器械消毒灭菌系统的后端API开发, 使用C#语言"
-                en="This is my graduation internship company and I am responsible for the backend API development of the disinfection and sterilization system for linen and surgical instruments at Wuhan First Hospital, using C #"></span>
+            <p><span class="translate"
+                cn="这是我的毕业实习公司, 我主要负责武汉市第一医院布草和手术器械消毒灭菌系统的后端, 使用C#语言, EntityFramwork and SqlServer进行WebAPI开发"
+                en="This is my graduation internship company and I am responsible for the backend development of the disinfection and sterilization system for linen and surgical instruments at Wuhan First Hospital, using C#, EntityFramwork and SqlServer to develop WebAPI."></span>
             </p>
             <p><span class="translate" cn="项目上线后，收到护士们的好评，随后公司凭借该项目成功评选为高新技术企业"
                 en="After the project was launched, it received praise from the nurses, and then the company was successfully selected as a high-tech enterprise by virtue of the project"></span>
@@ -270,7 +293,6 @@
         class="fa fa-stack-overflow w3-hover-opacity"></i></a>
     <p>Thanks for Reading My CV.</p>
   </footer>
-
 
   <script>
     var fn = () => {
