@@ -300,12 +300,12 @@
     var fn = () => {
       var elementsToTranslate = document.querySelectorAll(".translate");
       for (var i = 0; i < elementsToTranslate.length; i++) {
-       // if (toggleButton.checked) {
-        //  elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
-      //  } else {
-        //  elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('cn');
-       // }
-        elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
+        if (toggleButton.checked) {
+          elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
+        } else {
+          elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('cn');
+        }
+       // elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
       }
       ;
     }
