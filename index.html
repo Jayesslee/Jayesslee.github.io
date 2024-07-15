@@ -99,7 +99,7 @@
 
             </div>
             <div class="w3-display-bottomright w3-container w3-text-white" style="margin-bottom: 14%;">
-              <span>中文-EN</span>
+              <span>EN-中文</span>
             </div>
             <div class="w3-display-bottomright w3-container w3-text-white" style="margin-bottom: 4%;">
 
@@ -301,9 +301,9 @@
       var elementsToTranslate = document.querySelectorAll(".translate");
       for (var i = 0; i < elementsToTranslate.length; i++) {
         if (toggleButton.checked) {
-          elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
-        } else {
           elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('cn');
+        } else {
+          elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
         }
        // elementsToTranslate[i].textContent = elementsToTranslate[i].getAttribute('en');
       }
