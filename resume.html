@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body lang="en">
+    <section id="main">
+      <header id="title">
+        <h1>JUNDONG XIAO <span style="font-size: x-small;">Male 01/1995</span></h1>
+        <span class="subtitle">
+          Backend-focused full stack engineer with 6+ years of practical experience
+          <br>in server-side development, REST API, and agile scrum process,
+          <br>plus a proven work record of delivery, ownership, and adaptability.
+          <br>
+          <br>Bachelor of Engineering
+          <br>Computer Science
+          <br>Nanjing University of Science and Technology
+        </span>
+      </header>
+      <section class="main-block">
+        <h2>
+          <i class="fa fa-suitcase"></i> Experiences
+        </h2>
+        <section class="blocks">
+          <div class="date">
+            <span>present</span><span>2019</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Full Stack Engineer</h3>
+              <span class="place">Digiwin Software</span>
+              <span class="location">Nanjing, China</span>
+            </header>
+            <div>
+              <ul>
+                <li>My developer team adopts an agile development model, led by a Scrum Master (SM) , we work in sprints of 2 weeks duration. Each sprint begins with a sprint planning meeting, where we confirm requirements with the Product Owner (PO) and allocate development tasks.</li>
+                <li>We develop a SaaS application based on the Athena platform. I am mainly responsible for backend development and sometimes I also write front-end code. I also responsible for the code reviewing of junior developers, as well as the optimization and refactoring of some historical code.</li>
+                <li>Our team encourages the use of design patterns such as factory methods, builders, and the strategy pattern in our code. We emphasize the importance of naming and believe that self-explanatory code is superior to comments.</li>
+                <li>On the backend side, We use Intellij Idea for writing code, Maven for building Java projects, and Git for version control. For code quality control, we choose SonarLint and Alibaba Coding Guidelines plugins. When performing performance optimization, we also use PinPoint to inspect service call chains and server load pressure. Additionally, we use Druid Monitor to check the execution status of SQL statements.</li>
+                <li>On the frontend side, we use VSCode and the ES Lint plugin for code writing. We use NPM for building Angular projects, and we choose Ant Design by Ant Financial as our UI library.</li>
+              </ul>
+              </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2019</span><span>2018</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Backend Engineer</h3>
+              <span class="place">Juyun Information Technology</span>
+              <span class="location">Nanjing, China</span>
+            </header>
+            <div>
+              <ul>
+                <li>This is my first job and I am responsible for the backend development of the disinfection and sterilization system for linen and surgical instruments at Wuhan First Hospital, using C#/.Net, EntityFramwork and SqlServer to develop Web API and Winform desktop applications.</li>
+                <li>After the project was launched, it received praise from the nurses, and then the company was successfully selected as a high-tech enterprise by virtue of the project.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="blocks">
+          <div class="date">
+            <span>2013</span><span>2014</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Yet Another Job Position</h3>
+              <span class="place">Some Workplace</span>
+              <span class="location">Some City, Some Country</span>
+            </header>
+            <div>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+              </ul>
+              </div>
+          </div>
+        </section> -->
+      </section>
+      <section class="main-block">
+        <h2>
+          <i class="fa fa-folder-open"></i> Selected Projects
+        </h2>
+        <section class="blocks">
+          <div class="date">
+            <span>2024</span><span>2023</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Supply Chain Guardian</h3>
+              <span class="place">Nanjing, China</span>
+            </header>
+            <div>
+              <ul>
+                <li>Supply Chain Guardian is a SaaS application based on Athena platform that I developed from scratch, it focuses on supply chain management of new energy electric vehicles. It provides our clients functionalities like Sales Order Risk Detection, Production Manager Shipping, Inventory Coordination, Delivery Signing, etc. Our customers include both parts and main engine factories, including well-known main engine manufacturers like Great Wall Motor, Geely Auto, BYD Auto, etc.</li>
+                <li>When developing the Sales Order Risk Detection feature, I encountered an issue where the API for retrieving engine components returned a large amount of data, often causing timeouts or exceeding the maximum value of the HTTP response body. To address this problem, I implemented an asynchronous call approach to retrieve the parts in batches. I stored the response results of each batch in a temporary table. Once all the batches were completed, I merged and assembled them into a BOM (Bill of Materials) tree for further analysis.</li>
+                <li>The Supply Chain Guardian project has successfully completed 15 iterations of development, with 22 clients currently using it. This includes renowned automobile manufacturers such as BYD Auto, Great Wall Auto, Geely Auto, and more.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2022</span><span>2021</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Purchurser with Drawing</h3>
+              <span class="place">Nanjing, China</span>
+            </header>
+            <div>
+              <ul>
+                <li>Purchurser with Drawing is a project which can meet the needs of clients to purchase parts from suppliers using specific versions of drawings. It primarily implements the control functionality of attaching drawings to inquire orders and purchase orders within the whole production life cycle of the work orders. In this project, my main responsibilities are performance optimization and code refactoring.</li>
+                <li>During the refactoring process, I discovered that the performance of the inquiry order information retrieval service was poor, with excessively long response times. Additionally, there were occasional issues with not being able to retrieve database connections from the connection pool, producing a negative impact on user experience. Firstly, I examined the service call chain on PinPoint and identified a service with a long processing time. Using the time stamps obtained from PinPoint, I searched on Druid Monitor and found a specific SQL statement that took an unusually long time to execute. Each request to this service would occupy a database connection from the pool, causing subsequent requests to fail in acquiring connections. After analyzing the SQL statement with the EXPLAIN statement, I discovered that the number of rows scanned by the SQL statement far exceeded expectations. The cause was the use of the SUBSTRING function in the WHERE condition, which deactivated the index on the corresponding field. By preprocessing the parameters and then performing the query, the speed significantly improved, and the issue of failing to obtain a database connection no longer occurred.</li>
+                <li>After the refactoring and optimization of the PWD project, the product's response speed significantly improved. The customer was satisfied with the results and decided to renew the product for an additional year.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="blocks">
+          <div class="date">
+            <span>2014</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Some Project 3</h3>
+              <span class="place">Some workplace</span>
+            </header>
+            <div>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
+              </ul>
+            </div>
+          </div>
+        </section> -->
+      </section>
+      <section class="main-block concise">
+        <h2>
+          <i class="fa fa-graduation-cap"></i> Education
+        </h2>
+        <section class="blocks">
+          <div class="date">
+            <span>2018</span><span>2016</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Bachelor of Engineering in Computer Science</h3>
+              <span class="place">Nanjing University of Science and Technology ZiJin College</span>
+              <span class="location">Nanjing, China</span>
+            </header>
+            <div>National Encouragement Scholarship</div>
+          </div>
+        </section>
+        <section class="blocks">
+          <div class="date">
+            <span>2016</span><span>2013</span>
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Mechatronics</h3>
+              <span class="place">Vocational College of Information Technology</span>
+              <span class="location">Nanjing, China</span>
+            </header>
+            <!-- <div>President's Scholarship</div> -->
+          </div>
+        </section>
+        <!-- <section class="blocks">
+          <div class="date">
+          </div>
+          <div class="decorator">
+          </div>
+          <div class="details">
+            <header>
+              <h3>Massive Online Fee&ndash;Required Course (selective list)</h3>
+            </header>
+            <div class="concise">
+              <ul>
+                <li>Introduction to something else</li>
+                <li>Introduction to some more useless things</li>
+                <li>Philosophy in practice</li>
+                <li>Recursive research and its impact on recursive research</li>
+                <li>Artificial politics</li>
+              </ul>
+            </div>
+          </div>
+        </section> -->
+      </section>
+    </section>
+    <aside id="sidebar">
+      <div class="side-block" id="contact">
+        <h1>
+          Contact Info
+        </h1>
+        <ul>
+          <!-- <li><i class="fa fa-linkedin"></i> linkedin.com/in/john</li> -->
+          <li><i class="fa fa-envelope"></i> drodoshaw@gmail.com</li>
+          <li><i class="fa fa-phone"></i> +8618061641586</li>
+          <li><i class="fa fa-github"></i> Jayesslee.github.io</li>
+          
+        </ul>
+      </div>
+      <div class="side-block" id="skills">
+        <h1>
+          Skills (Proficient)
+        </h1>
+        <ul>
+          <!-- <li>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+          </li> -->
+          <li><b>Programming Languages</b></li>
+          <li>Java</li>
+          <li>C#</li>
+          <li>ECMAScript 5</li>
+          <li>ECMAScript 6</li>
+          <li>SQL</li>
+        </ul>
+        <ul>
+          <li><b>Technologies</b></li>
+          <li>Sping Boot</li>
+          <li>Restful Service</li>
+          <li>Guava</li>
+          <li>Vavr</li>
+          <li>Retrofit</li>
+          <li>Mybatis</li>
+          <li>JsonPath</li>
+          <li>Maven</li>
+          <li>Entity Framwork</li>
+          <li>Web API</li>
+          <li>Linq</li>
+          <li>Nuget Package Manager</li>
+          <li>Git</li>
+          <li>MySql</li>
+          <li>MairaDB</li>
+          <li>Sql Server</li>
+          <li>Redis</li>
+          <li>NodeJS</li>
+          <li>NPM</li>
+          <li>Angular</li>
+          <li>Ant Design</li>
+        </ul>
+        <ul>
+          <li><b>Knowledge</b></li>
+          <li>Multi-thread</li>
+          <li>Asynchronous Programming</li>
+          <li>Coroutine</li>
+          <li>Pure Function</li>
+          <li>Design Pattern</li>
+          <li>HTTP</li>
+          <li>MVC</li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>
+          Skills (Familiar)
+        </h1>
+        <ul>
+          <!-- <li>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+            <i class="fa fa-thumbs-up"></i>
+          </li> -->
+          <li><b>Programming Languages</b></li>
+          <li>TypeScript</li>
+          <li>Dart</li>
+          <li>Shell</li>
+        </ul>
+        <ul>
+          <li><b>Technologies</b></li>
+          <li>Docker</li>
+          <li>Kubernates</li>
+          <li>Dart</li>
+          <li>WeChat mini-program</li>
+          <li>Elasticsearch</li>
+          <li>Neo4J</li>
+          <li>MongoDB</li>
+          <li>cUrl</li>
+        </ul>
+        <ul>
+          <li><b>Knowledge</b></li>
+          <li>Container</li>
+          <li>Mobile App</li>
+          <li>Search Engine</li>
+          <li>NoSQL</li>
+          <li>Graph Database</li>
+          <li>CQL</li>
+        </ul>
+      </div>
+      <div class="side-block" id="disclaimer">
+        <!-- This r&eacute;sum&eacute; was wholly typeset with HTML/CSS &mdash; see <code>git.io/vVSYL</code> -->
+      </div>
+    </aside>
+  </body>
+</html>
